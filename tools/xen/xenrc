@@ -19,7 +19,7 @@ VDI_MB=${VDI_MB:-5000}
 # such as blkfront failing to plug a VBD and lead to random test fails.
 #
 # Set to 6GB so an 8GB XenServer VM can have a 1GB Dom0 and leave 1GB for VMs
-OSDOMU_MEM_MB=6144
+OSDOMU_MEM_MB=3072
 OSDOMU_VDI_GB=8
 
 # Network mapping. Specify bridge names or network names. Network names may
@@ -70,7 +70,7 @@ UBUNTU_INST_TEMPLATE_NAME="Ubuntu 14.04 (64-bit) for DevStack"
 # XenServer 6.1 and later or XCP 1.6 or later
 # 11.10 is only really supported with XenServer 6.0.2 and later
 UBUNTU_INST_ARCH="amd64"
-UBUNTU_INST_HTTP_HOSTNAME="archive.ubuntu.com"
+UBUNTU_INST_HTTP_HOSTNAME="it.archive.ubuntu.com"
 UBUNTU_INST_HTTP_DIRECTORY="/ubuntu"
 UBUNTU_INST_HTTP_PROXY=""
 UBUNTU_INST_LOCALE="en_US"
